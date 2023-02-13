@@ -1,15 +1,22 @@
+import "./portfolio.styles.scss";
+
 const App = () => {
+    const categories = [
+        { id: 1, title: "React" },
+        { id: 2, title: "Symfony" },
+        { id: 3, title: "node" },
+    ];
     return (
-        <div className="App">
-            <div className="portfolio-container">
-                <div className="category-container">
+        <div className="portfolio-container">
+            {categories.map((category) => (
+                <div key={category.id} className="category-container">
                     {/* <img/> */}
                     <div className="cat-body-container">
-                        <h2>symfony</h2>
+                        <h2>{category.title}</h2>
                         <p>my blog</p>
                     </div>
                 </div>
-            </div>
+            ))}
         </div>
     );
 };
