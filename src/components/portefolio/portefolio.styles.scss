@@ -1,0 +1,10 @@
+.portfolio-container {
+    grid-column: full-start / full-end;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
