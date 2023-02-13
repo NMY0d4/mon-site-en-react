@@ -1,0 +1,11 @@
+.home {
+    grid-column: full-start / full-end;
+    justify-content: center;
+
+    margin: 4rem;
+    &__util {
+    }
+    &__util--img {
+        width: 20rem;
+    }
+}

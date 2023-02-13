@@ -1,0 +1,98 @@
+// .nav {
+//     &__list {
+//         list-style: none;
+//     }
+//     &__item {
+//     }
+//     &__link {
+//     }
+// }
+
+.navbar-container {
+    transition: all 0.5s;
+    width: 100%;
+    position: relative;
+    z-index: 900;
+    background-color: var(--color-secondary-light);
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / 4;
+
+    &__button {
+        background-color: var(--color-secondary-light);
+        height: 5rem;
+        width: 5rem;
+        position: fixed;
+        top: 4rem;
+        left: 1.4rem;
+        border: none;
+        z-index: 2000;
+        cursor: pointer;
+
+        &:hover .navbar-container__icon::before {
+            top: -1.2rem;
+        }
+        &:hover .navbar-container__icon::after {
+            top: 1.2rem;
+        }
+    }
+
+    //ICON
+    &__icon {
+        position: relative;
+        margin-top: 1rem;
+
+        &,
+        &::before,
+        &::after {
+            // position: relative;
+            z-index: 2500;
+            width: 3rem;
+            height: 2px;
+            background-color: var(--color-primary-dark);
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all 0.2s;
+        }
+        &::before {
+            top: -0.9rem;
+        }
+        &::after {
+            top: 0.9rem;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        height: 6rem;
+        z-index: 1000;
+        // align-items: flex-start;
+        justify-content: space-around;
+        // @media only screen and(max-width:$bp-large) {
+        //     grid-column: 1 / -1;
+        //     grid-row: 1 / span 1;
+        //     justify-content: end;
+        //     align-items: center;
+        // }
+    }
+    &.nav-open {
+        width: 1200%;
+    }
+    &.nav-open &__button &__icon {
+        background-color: transparent;
+    }
+
+    &.nav-open &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    &.nav-open &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}
