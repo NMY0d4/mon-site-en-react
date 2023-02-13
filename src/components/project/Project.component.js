@@ -11,7 +11,7 @@ const Project = ({ project }) => {
             />
             <div className="project-body-container">
                 <h2>{title}</h2>
-                <p>See Now</p>
+                <p>See Now </p>
             </div>
         </div>
     );
