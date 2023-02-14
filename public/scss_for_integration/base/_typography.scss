@@ -4,7 +4,8 @@
 }
 
 .heading-1 {
-    @extend %heading;
+    font-family: var(--font-display);
+    font-weight: 400;
     font-family: var(--font-primary);
     font-size: 5rem;
     font-weight: bold;

@@ -1,0 +1,48 @@
+$color-secondary: #71a223;
+$color-secondary-light: rgb(195, 237, 108);
+
+.header {
+    font-size: 2.5rem;
+    width: 100%;
+    grid-column: full-start / full-end;
+    justify-content: center;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba($color-secondary, 0.2),
+            rgba($color-secondary-light, 0.3)
+        ),
+        url("/images/hero_resize.jpg");
+    background-size: cover;
+    background-position: center;
+    .heading-1 {
+        font-family: var(--font-display);
+        font-weight: 400;
+        font-family: var(--font-primary);
+        font-size: 5rem;
+        font-weight: bold;
+        color: var(--color-primary);
+        line-height: 1.2;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+    &__myname {
+        backdrop-filter: blur(5px);
+        z-index: 10;
+    }
+
+    &__logo {
+        backdrop-filter: blur(5px);
+        margin: 2rem 2rem 2rem auto;
+    }
+
+    .logo-icon {
+        display: block;
+        width: 15rem;
+    }
+    height: auto;
+}
