@@ -6,6 +6,7 @@ import imgRsGarage from "../../images/portefolio/hero_rs.jpg";
 import imgReactEcom from "../../images/portefolio/reactEcom.jpg";
 import imgNatours from "../../images/portefolio/natours.jpg";
 import imgTodayLearn from "../../images/portefolio/todayILearned.jpg";
+import { Fragment } from "react";
 
 const Portefolio = () => {
     const projects = [
@@ -42,11 +43,14 @@ const Portefolio = () => {
     ];
 
     return (
-        <div className="portfolio-container">
-            {projects.map((project) => (
-                <Project key={project.id} project={project} />
-            ))}
-        </div>
+        <Fragment>
+            <h2>Portefolio</h2>
+            <div className="portfolio-container">
+                {projects.map((project) => (
+                    <Project key={project.id} project={project} />
+                ))}
+            </div>
+        </Fragment>
     );
 };
 
