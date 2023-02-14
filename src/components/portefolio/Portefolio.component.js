@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Project from "../project/Project.component";
 import "./portefolio.styles.scss";
 import imgForkify from "../../images/portefolio/pexels-elina-fairytale-3806983.jpg";
@@ -6,7 +7,6 @@ import imgRsGarage from "../../images/portefolio/hero_rs.jpg";
 import imgReactEcom from "../../images/portefolio/reactEcom.jpg";
 import imgNatours from "../../images/portefolio/natours.jpg";
 import imgTodayLearn from "../../images/portefolio/todayILearned.jpg";
-import { Fragment } from "react";
 
 const Portefolio = () => {
     const projects = [
@@ -44,8 +44,8 @@ const Portefolio = () => {
 
     return (
         <Fragment>
-            <h2>Portefolio</h2>
             <div className="portfolio-container">
+                <h2 className="portfolio-title">Portfolio</h2>
                 {projects.map((project) => (
                     <Project key={project.id} project={project} />
                 ))}
