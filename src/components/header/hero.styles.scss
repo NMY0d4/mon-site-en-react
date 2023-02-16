@@ -41,7 +41,16 @@ $color-secondary-light: rgb(195, 237, 108);
 
     .logo-icon {
         display: block;
-        width: 15rem;
+        width: 12rem;
     }
     height: auto;
+    .comment {
+        position: relative;
+        width: 13%;
+        backdrop-filter: blur(5px);
+        right: -55%;
+        font-family: var(--font-primary);
+        font-weight: 600;
+        color: var(--color-primary);
+    }
 }
