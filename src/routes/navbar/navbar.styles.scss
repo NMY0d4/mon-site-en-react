@@ -1,4 +1,7 @@
 .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all 0.5s;
     width: 100%;
     position: relative;
@@ -13,9 +16,9 @@
         width: 3.5rem;
         position: fixed;
         top: 2rem;
-        left: 1.4rem;
+        left: 0.8rem;
         border: none;
-        z-index: 2000;
+        z-index: 1000;
         cursor: pointer;
 
         &:hover .navbar-container__icon::before {
@@ -36,7 +39,7 @@
         &::after {
             // position: relative;
             z-index: 2500;
-            width: 3rem;
+            width: 2.5rem;
             height: 2px;
             background-color: var(--color-primary-dark);
             display: inline-block;
@@ -59,9 +62,12 @@
 
     .navbar {
         display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 30%;
         height: 6rem;
         z-index: 1000;
-        // align-items: flex-start;
+        align-items: center;
         justify-content: space-around;
         // @media only screen and(max-width:$bp-large) {
         //     grid-column: 1 / -1;
