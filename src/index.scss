@@ -19,7 +19,7 @@ COLORS
     --color-primary-dark: #0c1701;
 
     --color-secondary: #71a223;
-    --color-secondary-light: rgb(195, 237, 108);
+    --color-secondary-light: #c3ed6c;
     --color-secondary-dark: #1a5e01;
 
     --color-Grey-light-1: #faf9f9;
@@ -68,6 +68,9 @@ body {
     line-height: 1.6;
     color: var(--color-Grey-dark-2);
     position: relative;
+    background-image: url("/images/body-bkgd.jpg");
+    background-size: cover;
+    background-position: center;
 
     min-height: 100vh;
 }
