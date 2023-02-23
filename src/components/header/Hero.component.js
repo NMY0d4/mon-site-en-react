@@ -7,7 +7,7 @@ export const Hero = () => {
             <div className="header__container">
                 <h1 className="header__myname heading-1">Grégory Marini</h1>
                 <div className="header__logo">
-                    <a href="{{path('app_home')}}" class="logo-link">
+                    <a href="{{path('app_home')}}" className="logo-link">
                         <img
                             src={logoDarkGreen}
                             alt="logo GM_Web"
