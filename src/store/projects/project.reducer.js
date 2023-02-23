@@ -41,7 +41,7 @@ const PROJECTS_INITIAL_STATE = [
 const projectsReducer = (state = PROJECTS_INITIAL_STATE, action) => {
     const [type, payload] = action;
     switch (type) {
-        case PROJECTS_ACTION_TYPE.FETCH_PROJECTS_START:
+        case PROJECTS_ACTION_TYPE.SET_PROJECTS_START:
             return { ...state, projects: payload };
 
         default:
