@@ -1,0 +1,5 @@
+export const PROJECT_ACTION_TYPES = {
+    SET_PROJECTS: "project/SET_PROJECTS",
+    ADD_NEW_PROJECT: "project/ADD_NEW_PROJECT",
+    SET_CURRENT_PROJECT: "project/SET_CURRENT_PROJECT",
+};
