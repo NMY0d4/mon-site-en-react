@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import "./navbar.styles.scss";
-import Portefolio from "../../components/portefolio/Portefolio.component";
 import { NavLink, Outlet } from "react-router-dom";
 
 const Navbar = () => {
@@ -20,7 +19,7 @@ const Navbar = () => {
                     <span className="navbar-container__icon">&nbsp;</span>
                 </button>
                 <div className="navbar">
-                    <NavLink to="hero">Home</NavLink>
+                    <NavLink to="/">Home</NavLink>
                     <NavLink to="portefolio">Portefolio</NavLink>
                 </div>
             </section>
