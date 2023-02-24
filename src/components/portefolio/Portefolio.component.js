@@ -14,7 +14,7 @@ const Portefolio = () => {
     }, [dispatch]);
 
     const projects = useSelector(selectProjects);
-    console.log(projects);
+    // console.log(projects);
 
     return (
         <Fragment>
