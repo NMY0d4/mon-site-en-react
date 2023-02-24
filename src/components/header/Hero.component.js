@@ -7,13 +7,13 @@ export const Hero = () => {
             <div className="header__container">
                 <h1 className="header__myname heading-1">Grégory Marini</h1>
                 <div className="header__logo">
-                    <a href="{{path('app_home')}}" className="logo-link">
+                    <div className="logo-link">
                         <img
                             src={logoDarkGreen}
                             alt="logo GM_Web"
                             className="logo-icon"
                         />
-                    </a>
+                    </div>
                 </div>
             </div>
             <div className="comment">
