@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Hero from "./components/header/Hero.component";
 import Navbar from "./routes/navbar/Navbar.component";
 import Portefolio from "./components/portefolio/Portefolio.component";
+import TrainReact from "./components/home/TrainReact.component";
 
 const App = () => {
     return (
@@ -11,7 +12,7 @@ const App = () => {
                 <Route path="/" element={<Navbar />}>
                     <Route index element={<Hero />} />
                     <Route path="portefolio" element={<Portefolio />} />
-                    {/* <Route path="blog" element={<Blog />} /> */}
+                    <Route path="trainReact" element={<TrainReact />} />
                 </Route>
             </Routes>
         </div>
