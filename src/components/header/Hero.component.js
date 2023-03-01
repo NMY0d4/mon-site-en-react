@@ -17,8 +17,8 @@ export const Hero = () => {
                 </div>
             </div>
             <div className="comment">
-                <p>Développeur</p>
-                <p>Full-Stack</p>
+                <h2>Développeur</h2>
+                <h3>Full-Stack</h3>
             </div>
         </header>
     );
