@@ -1,5 +1,5 @@
 import React from "react";
-import Todos from "../Todos/Todos.component";
+import Todos from "./todosWithMax/Todos/Todos.component";
 
 import "./trainReact.styles.scss";
 

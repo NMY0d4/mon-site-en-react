@@ -1,5 +1,9 @@
-h1,
-h2 {
+.todos-container {
+    display: flex;
+    justify-content: center;
+}
+
+.title-train {
     color: #333333;
 }
 
@@ -29,6 +33,7 @@ h2 {
 }
 
 .card {
+    text-align: start;
     background-color: white;
     border-radius: 4px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);

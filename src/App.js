@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Hero from "./components/header/Hero.component";
 import Navbar from "./routes/navbar/Navbar.component";
 import Portefolio from "./components/portefolio/Portefolio.component";
-import TrainReact from "./components/home/TrainReact.component";
+import TrainReact from "./components/trainReact/TrainReact.component";
 
 const App = () => {
     return (
