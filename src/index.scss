@@ -81,3 +81,11 @@ h3 {
     font-family: var(--font-primary);
     color: var(--color-primary);
 }
+
+.full-container {
+    grid-column: full-start / full-end;
+}
+
+.center-container {
+    grid-column: center-start / center-end;
+}

@@ -18,7 +18,7 @@ const Portefolio = () => {
 
     return (
         <Fragment>
-            <div className="portfolio-container">
+            <div className="portfolio-container full-container">
                 <h2 className="portfolio-title">Portfolio</h2>
                 {projects &&
                     projects.map((project) => (

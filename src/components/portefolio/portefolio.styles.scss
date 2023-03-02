@@ -1,4 +1,12 @@
 .portfolio-container {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
     .portfolio-title {
         font-weight: 400;
 
@@ -7,12 +15,4 @@
         text-align: center;
         width: 100%;
     }
-    grid-column: full-start / full-end;
-    justify-content: center;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
 }

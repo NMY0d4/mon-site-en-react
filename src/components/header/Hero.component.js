@@ -3,7 +3,7 @@ import logoDarkGreen from "../../images/logo_original_vert_fonce.png";
 
 export const Hero = () => {
     return (
-        <header className="header">
+        <header className="header full-container">
             <div className="header__container">
                 <h1 className="header__myname heading-1">Grégory Marini</h1>
                 <div className="header__logo">

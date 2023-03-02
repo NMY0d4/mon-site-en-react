@@ -1,7 +1,7 @@
 .project-container {
-    min-width: 30%;
+    width: 30%;
     height: 240px;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,6 +31,7 @@
 
     .project-body-container {
         height: 90px;
+        width: 250px;
         padding: 0 25px;
         display: flex;
         flex-direction: column;

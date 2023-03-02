@@ -4,7 +4,6 @@ $color-secondary-light: rgb(195, 237, 108);
 .header {
     font-size: 2.5rem;
     width: 100%;
-    grid-column: full-start / full-end;
     justify-content: center;
     background-image: linear-gradient(
             to right bottom,
