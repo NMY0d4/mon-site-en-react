@@ -10,6 +10,10 @@ export default function Todo({ text }) {
         setModalIsOpen(true);
     };
 
+    const closeModalHandler = () => {
+        setModalIsOpen(false);
+    };
+
     return (
         <div className="card">
             <h2 className="title-train">{text}</h2>
@@ -20,8 +24,11 @@ export default function Todo({ text }) {
             </div>
             {modalIsOpen && (
                 <Fragment>
-                    <Modal />
-                    <Backdrop />
+                    <Modal
+                        onCancel={closeModalHandler}
+                        onConfirm={closeModalHandler}
+                    />
+                    <Backdrop onCancel={closeModalHandler} />
                 </Fragment>
             )}
         </div>
