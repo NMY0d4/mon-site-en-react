@@ -1,5 +1,5 @@
 import React from "react";
-import Todos from "./todosWithMax/Todos/Todos.component";
+import { NavLink } from "react-router-dom";
 
 import "./trainReact.styles.scss";
 
@@ -7,7 +7,14 @@ const TrainReact = () => {
     return (
         <div className="train-container">
             <h1>Trainning day</h1>
-            <Todos />
+            <ul>
+                <li>
+                    <NavLink to="todos">Todos-list</NavLink>
+                </li>
+                <li>
+                    <NavLink to="project">Project</NavLink>
+                </li>
+            </ul>
         </div>
     );
 };
