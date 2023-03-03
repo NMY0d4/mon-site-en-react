@@ -12,7 +12,7 @@ const TrainReact = () => {
                     <NavLink to="todos">Todos-list</NavLink>
                 </li>
                 <li>
-                    <NavLink to="project">Project</NavLink>
+                    <NavLink to="meetupsHome">Meetups Project</NavLink>
                 </li>
             </ul>
         </div>
