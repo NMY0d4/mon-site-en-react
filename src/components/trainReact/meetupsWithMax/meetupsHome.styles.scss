@@ -1,0 +1,25 @@
+:root {
+    --colorMeetup-primary: #77002e;
+    --colorMeetup-primary-light: #ac144e;
+    --colorMeetup-primary-dark: #4b041f;
+
+    // --color-secondary: #71a223;
+    // --color-secondary-light: #c3ed6c;
+    // --color-secondary-dark: #1a5e01;
+}
+
+.meetups-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    .allMeetups {
+        h1 {
+            margin: 3rem auto;
+            font-size: 2.5rem;
+            color: var(--colorMeetup-primary);
+        }
+    }
+}

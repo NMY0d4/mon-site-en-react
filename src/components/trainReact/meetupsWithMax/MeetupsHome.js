@@ -4,10 +4,11 @@ import MeetupNav from "./layout/MeetupNav.layout";
 import AllMeetupsPage from "./pages/AllMeetups";
 import FavoritesPage from "./pages/Favorites";
 import NewMeetupPage from "./pages/NewMeetup";
+import "./meetupsHome.styles.scss";
 
 export default function MettupsHome() {
     return (
-        <div>
+        <div className="full-container meetups-container">
             <MeetupNav />
             <Routes>
                 <Route path="/" element={<AllMeetupsPage />} />

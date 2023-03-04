@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./meetUpNav.module.scss";
 
 export default function MeetupNav() {
     return (
-        <header>
-            <div>React Meetups</div>
+        <header className={styles.MeetUpNavContainer}>
+            <div className={styles.logo}>React Meetups</div>
             <nav>
                 <ul>
                     <li>
