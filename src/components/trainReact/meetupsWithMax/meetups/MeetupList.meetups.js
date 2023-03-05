@@ -1,5 +1,5 @@
-import styles from "./MeetupList.module.scss";
-import MeetupItem from "./MeetupItem.meetups";
+import styles from './MeetupList.module.scss';
+import MeetupItem from './MeetupItem.meetups';
 
 export default function MeetupList({ meetups }) {
     return (

@@ -1,20 +1,19 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import MeetupNav from "./layout/MeetupNav.layout";
-import AllMeetupsPage from "./pages/AllMeetups";
-import FavoritesPage from "./pages/Favorites";
-import NewMeetupPage from "./pages/NewMeetup";
-import "./meetupsHome.styles.scss";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import AllMeetupsPage from './pages/AllMeetups.page';
+import FavoritesPage from './pages/Favorites.page';
+import NewMeetupPage from './pages/NewMeetup.page';
+import './meetupsHome.styles.scss';
+import Layout from './layout/Layout.layout';
 
 export default function MettupsHome() {
     return (
-        <div className="full-container meetups-container">
-            <MeetupNav />
+        <Layout>
             <Routes>
-                <Route path="/" element={<AllMeetupsPage />} />
-                <Route path="/favorites" element={<FavoritesPage />} />
-                <Route path="/new-meetup" element={<NewMeetupPage />} />
+                <Route path='/' element={<AllMeetupsPage />} />
+                <Route path='/favorites' element={<FavoritesPage />} />
+                <Route path='/new-meetup' element={<NewMeetupPage />} />
             </Routes>
-        </div>
+        </Layout>
     );
 }
