@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     return (
         <div className={`full-container ${styles.meetupsContainer}`}>
             <MeetupNav />
-            <main>{children}</main>
+            <main className={styles.main}>{children}</main>
         </div>
     );
 }

@@ -65,8 +65,9 @@
     .navbar {
         display: flex;
         flex-direction: column;
+        gap: 1.5rem;
         position: fixed;
-        top: 30%;
+        top: 40%;
         height: 6rem;
         z-index: 1000;
         align-items: center;
@@ -93,4 +94,9 @@
         top: 0;
         transform: rotate(-135deg);
     }
+}
+
+.link {
+    color: var(--color-primary);
+    font-size: 2rem;
 }
