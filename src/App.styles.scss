@@ -1,6 +1,6 @@
 .app-container {
     display: grid;
-    grid-template-rows: 100vh;
+    grid-template-rows: min(100%);
     grid-template-columns:
         [sidebar-start] 5rem [sidebar-end full-start] minmax(6rem, 1fr)
         [center-start] repeat(
