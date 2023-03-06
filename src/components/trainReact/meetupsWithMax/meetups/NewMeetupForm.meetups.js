@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import Card from '../ui/Card.ui';
 import styles from './NewMeetupForm.module.scss';
 
-export default function NewMeetupForm() {
+export default function NewMeetupForm({ onAddMeetup }) {
     const titleInputRef = useRef();
     const imageInputRef = useRef();
     const addressInputRef = useRef();
@@ -22,7 +22,7 @@ export default function NewMeetupForm() {
             description: enteredDescription,
         };
 
-        console.log(meetupData);
+        onAddMeetup(meetupData);
     };
     return (
         <Card>
