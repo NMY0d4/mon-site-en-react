@@ -9,14 +9,14 @@ import { FavoritesContextProvider } from '../../../store/context/favorites.conte
 
 export default function MettupsHome() {
   return (
-    <Layout>
-      <FavoritesContextProvider>
+    <FavoritesContextProvider>
+      <Layout>
         <Routes>
           <Route path='/' element={<AllMeetupsPage />} />
           <Route path='/favorites' element={<FavoritesPage />} />
           <Route path='/new-meetup' element={<NewMeetupPage />} />
         </Routes>
-      </FavoritesContextProvider>
-    </Layout>
+      </Layout>
+    </FavoritesContextProvider>
   );
 }

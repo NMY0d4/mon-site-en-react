@@ -22,6 +22,7 @@ export function FavoritesContextProvider({ children }) {
       return prevUserFavorites.filter((meetup) => meetup.id !== meetupId);
     });
   }
+
   function itemIsFavoriteHandler(meetupId) {
     return userFavorites.some((meetup) => meetup.id === meetupId);
   }
