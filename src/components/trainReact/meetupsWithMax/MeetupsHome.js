@@ -5,15 +5,18 @@ import FavoritesPage from './pages/Favorites.page';
 import NewMeetupPage from './pages/NewMeetup.page';
 import './meetupsHome.styles.scss';
 import Layout from './layout/Layout.layout';
+import { FavoritesContextProvider } from '../../../store/context/favorites.context';
 
 export default function MettupsHome() {
-    return (
-        <Layout>
-            <Routes>
-                <Route path='/' element={<AllMeetupsPage />} />
-                <Route path='/favorites' element={<FavoritesPage />} />
-                <Route path='/new-meetup' element={<NewMeetupPage />} />
-            </Routes>
-        </Layout>
-    );
+  return (
+    <Layout>
+      <FavoritesContextProvider>
+        <Routes>
+          <Route path='/' element={<AllMeetupsPage />} />
+          <Route path='/favorites' element={<FavoritesPage />} />
+          <Route path='/new-meetup' element={<NewMeetupPage />} />
+        </Routes>
+      </FavoritesContextProvider>
+    </Layout>
+  );
 }
