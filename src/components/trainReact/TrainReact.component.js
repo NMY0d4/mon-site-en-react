@@ -11,14 +11,16 @@ const TrainReact = () => {
       <h1>Trainning day</h1>
       <ul>
         <li>
-          <NavLink to='todos'>
+          <NavLink className='container-link' to='todos'>
             <FontAwesomeIcon className='link-trainReact' icon={faList} />
             Todos-list
           </NavLink>
         </li>
         <li>
-          <FontAwesomeIcon className='link-trainReact' icon={faLocation} />
-          <NavLink to='meetupsHome'>Meetups Project</NavLink>
+          <NavLink className='container-link' to='meetupsHome'>
+            <FontAwesomeIcon className='link-trainReact' icon={faLocation} />
+            Meetups Project
+          </NavLink>
         </li>
       </ul>
     </div>
