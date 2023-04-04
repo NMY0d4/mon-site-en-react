@@ -14,7 +14,7 @@
     flex-direction: column;
     text-align: justify;
     gap: 0.8rem;
-  }  
+  }
 
   .container-link {
     color: var(--color-secondary);
@@ -25,11 +25,11 @@
     .link-trainReact {
       margin-right: 1rem;
       color: var(--color-primary);
-      transition: all 0.3s;
+      transition: all 0.5s;
     }
+    border-radius: 6px;
     &:hover {
       border: 1px solid var(--color-primary);
-      border-radius: 8px;
       .link-trainReact {
         scale: 1.3;
       }
