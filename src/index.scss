@@ -14,65 +14,65 @@ COLORS
 */
 
 :root {
-    --color-primary: #0c2b01;
-    --color-primary-light: #114300;
-    --color-primary-dark: #0c1701;
+  --color-primary: #0c2b01;
+  --color-primary-light: #114300;
+  --color-primary-dark: #0c1701;
 
-    --color-secondary: #71a223;
-    --color-secondary-light: #c3ed6c;
-    --color-secondary-dark: #1a5e01;
+  --color-secondary: #71a223;
+  --color-secondary-light: #c3ed6c;
+  --color-secondary-dark: #1a5e01;
 
-    --color-Grey-light-1: #faf9f9;
-    --color-Grey-light-2: #f4f2f2;
-    --color-Grey-light-3: #f0eeee;
-    --color-Grey-light-4: #ccc;
+  --color-Grey-light-1: #faf9f9;
+  --color-Grey-light-2: #f4f2f2;
+  --color-Grey-light-3: #f0eeee;
+  --color-Grey-light-4: #ccc;
 
-    --color-Grey-dark-1: #333;
-    --color-Grey-dark-2: #777;
-    --color-Grey-dark-3: #999;
+  --color-Grey-dark-1: #333;
+  --color-Grey-dark-2: #777;
+  --color-Grey-dark-3: #999;
 
-    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-    --shadow-light: 0 2rem 5rem rgba($color: #000000, $alpha: 0.06);
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba($color: #000000, $alpha: 0.06);
 
-    --line: 1px solid var(--color-Grey-light-3);
+  --line: 1px solid var(--color-Grey-light-3);
 
-    /* // FONT VARIABLES */
-    --font-primary: "Merienda", cursive;
-    --font-display: "Scada", sans-serif;
+  /* // FONT VARIABLES */
+  --font-primary: 'Merienda', cursive;
+  --font-display: 'Scada', sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :link,
 :visited {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-display);
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--color-Grey-dark-2);
-    position: relative;
-    background-image: url("/images/body-bkgd.jpg");
-    background-size: cover;
-    background-position: center;
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-Grey-dark-2);
+  position: relative;
+  background-image: url('/images/body-bkgd.jpg');
+  background-size: cover;
+  background-position: center;
 
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 h1,
@@ -80,14 +80,17 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: var(--font-primary);
-    color: var(--color-primary);
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+}
+ul {
+  list-style-type: none;
 }
 
 .full-container {
-    grid-column: full-start / full-end;
+  grid-column: full-start / full-end;
 }
 
 .center-container {
-    grid-column: center-start / center-end;
+  grid-column: center-start / center-end;
 }
